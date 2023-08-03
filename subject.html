@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"
+        defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+
+    .img-fluid-ex {
+        height: 170px;
+        width: 170px;
+        border-radius: 20px;
+    }
+
+    p {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    div.desc {
+        position: relative;
+        color: rgb(0, 0, 0);
+
+    }
+
+    div.desc::before {
+        content: '';
+        background-image: url(https://ic.unicamp.br/wp-content/uploads/2019/11/programming-code-abstract-screen-of-software-developer-2194062.jpg);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: absolute;
+        opacity: 0.6;
+        filter: blur(6px);
+        z-index: -1;
+    }
+
+    nav {
+        font-size: 20px;
+    }
+
+    .nav-item {
+        background-image: linear-gradient(#184dbeda, #184dbeda);
+        background-size: 0 100%;
+        background-repeat: no-repeat;
+        transition: .4s;
+    }
+
+    .nav-item:hover {
+        background-size: 100% 100%;
+    }
+
+    .dropdown-item {
+        background-image: linear-gradient(#184dbeda, #184dbeda);
+        background-size: 0 100%;
+        background-repeat: no-repeat;
+        transition: .4s;
+    }
+
+    .dropdown-item:hover {
+        background-size: 100% 100%;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Francisco</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Pagina Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="subject.html"><strong>Engenharia da
+                                Computação</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html">Formulário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="albums.html">Albuns favoritos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Curriculum Vitae
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="perfil.html">Perfil pessoal</a></li>
+                            <li><a class="dropdown-item" href="scolarship.html">Escolaridade/Competências</a></li>
+                            <li><a class="dropdown-item" href="experience.html">Experiência</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid desc">
+        <div class="row text-center">
+            <p class="display-1 ">Resumo do curso</p>
+            <div class="row">
+                <div class="col">
+                    <img class="img-fluid-ex float-start"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Intel_Core_i7-2600_SR00B_%2816339769307%29.jpg/220px-Intel_Core_i7-2600_SR00B_%2816339769307%29.jpg"
+                        alt=""
+                        title="Um processador utilizado em computadores pessoais, o resultado dos esforços da Engenharia de Computação.">
+                    <p class="fw-bold">A Engenharia de Computação é um curso que integra conhecimentos das áreas da
+                        Ciência da
+                        Computação e da
+                        Engenharia Eletrônica necessários para desenvolver hardware e software. Os engenheiros de
+                        computação
+                        podem atuar no design de softwares ou integração de hardware e software, podendo desenvolver
+                        projetos de
+                        microcontroladores individuais, microprocessadores, computadores pessoais e supercomputadores
+                        até o
+                        projeto de circuitos. Este campo de engenharia não se concentra apenas em como os próprios
+                        sistemas de
+                        computadores funcionam, mas também em como eles se integram no quadro geral.
+
+                        Tarefas usuais envolvendo engenheiros de computação incluem desenvolver software para
+                        microcontroladores
+                        embutidos, projetar chips VLSI, projetar sensores analógicos, projetar placas de circuito de
+                        sinal misto
+                        e projetar sistemas operacionais. Os engenheiros de computação também são adequados para a
+                        pesquisa em
+                        robótica, que depende muito do uso de sistemas digitais para controlar e monitorar sistemas
+                        elétricos,
+                        comunicadores e sensores.
+
+                        Em muitas instituições, os estudantes de Engenharia de Computação podem escolher áreas de estudo
+                        aprofundado em seu primeiro e último ano, porque a amplitude total do conhecimento usado no
+                        projeto e na
+                        aplicação de computadores está além do escopo de um curso de graduação. Outras instituições
+                        podem exigir
+                        que os estudantes de Engenharia concluam um ou dois anos de Engenharia Geral antes de declarar a
+                        Engenharia de Computação como seu foco principal.</p>
+                </div>
+            </div>
+            <br>
+            <hr size="1px">
+            <br>
+            <p class="display-2">História da Engenharia da Computação</p>
+            <div class="row">
+                <div class="col">
+                    <a href="https://pt.wikipedia.org/wiki/M%C3%A1quina_diferencial"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Babbage_Difference_Engine.jpg/1280px-Babbage_Difference_Engine.jpg"
+                            alt="" class="img-fluid-ex float-end"
+                            title="A Máquina Difencial, o primeiro computador mecânico. Feito em meados de 1820 por Charles Babbage, foi uns dos primeiros esforços na tentativa de automatizar processos."></a>
+
+                    <p class="fw-bold">A história da engenharia da computação começa com o desenvolvimento dos primeiros
+                        computadores
+                        digitais
+                        na década de 1940. Essas máquinas eram enormes, ocupavam salas inteiras e eram usadas
+                        principalmente
+                        para fins militares e científicos.
+
+                        Ao longo das décadas seguintes, a tecnologia dos computadores continuou a evoluir rapidamente.
+                        Foram
+                        criados novos componentes eletrônicos, como transistores e circuitos integrados, que permitiram
+                        a
+                        fabricação de computadores menores, mais rápidos e mais acessíveis.
+
+                        Na década de 1970, surgiram os primeiros computadores pessoais, que foram um marco na história
+                        da
+                        computação e tiveram um impacto enorme na sociedade. Com a popularização dos computadores
+                        pessoais,
+                        a
+                        demanda por profissionais capacitados para projetar, construir e programar essas máquinas
+                        cresceu
+                        rapidamente.
+                    </p>
+                    <a href="https://pt.wikipedia.org/wiki/ENIAC"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Eniac.jpg/1280px-Eniac.jpg"
+                            alt="" class="img-fluid-ex float-start"
+                            title="O ENIAC, o primeiro computador eletrônico."></a>
+                    <p class="fw-bold">
+                        Foi nesse contexto que a engenharia da computação surgiu como uma disciplina acadêmica, com o
+                        objetivo
+                        de formar profissionais capazes de projetar sistemas computacionais complexos, incluindo
+                        hardware e
+                        software.
+
+                        Hoje, a engenharia da computação continua a evoluir e se expandir, abrangendo áreas como
+                        inteligência
+                        artificial, sistemas embarcados, redes de computadores e muito mais. Os engenheiros de
+                        computação
+                        são
+                        fundamentais para o desenvolvimento de tecnologias inovadoras e para a solução de problemas
+                        complexos em
+                        uma ampla variedade de setores, desde a indústria até a medicina e a ciência.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
